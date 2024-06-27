@@ -9,7 +9,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "./script.js"
     }
-  ]
+  ],
+  "env": {
+    "PORT": "6000",
+    "mongoDBURL": "your_mongodb_connection_string"
+  }
 }
