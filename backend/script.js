@@ -35,3 +35,13 @@ async function main() {
 main().catch((err) => {
   console.log(err);
 });
+// {
+//   "version": 2,
+//   "builds": [{ "src": "./backend/script.js", "use": "@vercel/node" }],
+//   "routes": [
+//     {
+//       "src": "/api/(.*)",
+//       "dest": "./backend/script.js"
+//     }
+//   ]
+// }
