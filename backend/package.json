@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "create-vercel-config":"node createVercelConfig.js",
     "start": "node script.js",
     "dev": "nodemon script.js"
   },

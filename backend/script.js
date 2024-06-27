@@ -37,11 +37,15 @@ main().catch((err) => {
 });
 // {
 //   "version": 2,
-//   "builds": [{ "src": "./backend/script.js", "use": "@vercel/node" }],
+//   "builds": [
+//     {
+//       "src": "backend/script.js",
+//       "use": "@vercel/node"
+//     }
+//   ],
 //   "routes": [
 //     {
 //       "src": "/api/(.*)",
-//       "dest": "./backend/script.js"
-//     }
-//   ]
+//       "dest": "backend/script.js"
+//     }  ]
 // }
