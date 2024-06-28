@@ -11,9 +11,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  console.log("Api is running");
-});
 app.use("/api/tasks", taskRoutes);
 app.get("/home", (req, res) => res.json("This is home page"));
 
