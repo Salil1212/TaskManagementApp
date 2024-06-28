@@ -1,21 +1,9 @@
-/* .task-list-container {
-  padding: 20px;
-}
-
-.task-list-container h2 {
-  color: #333;
-  font-size: 28px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* Adjust grid layout for responsiveness */
 @media (max-width: 768px) {
   .task-list-container .row {
     flex-direction: column;
   }
 }
-*/ .task-list-container {
+.task-list-container {
   padding: 20px;
 }
 
