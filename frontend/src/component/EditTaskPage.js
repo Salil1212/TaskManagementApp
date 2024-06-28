@@ -17,7 +17,9 @@ const EditTaskPage = () => {
 
   const fetchTask = async () => {
     try {
-      const response = await axios.get(`/api/tasks/${id}`);
+      const response = await axios.get(
+        `https://task-management-app-server-puce.vercel.app/api/tasks/${id}`
+      );
       setTask(response.data);
       setTitle(response.data.title);
       setDescription(response.data.description);
@@ -32,7 +34,10 @@ const EditTaskPage = () => {
     const updatedTask = { title, description, dueDate };
 
     try {
-      await axios.put(`/api/tasks/${id}`, updatedTask);
+      await axios.put(
+        `https://task-management-app-server-puce.vercel.app/api/tasks/${id}`,
+        updatedTask
+      );
       navigate("/"); // Redirect to Task List page
     } catch (error) {
       console.error("Error updating task: ", error);

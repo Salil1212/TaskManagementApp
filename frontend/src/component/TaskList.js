@@ -22,7 +22,9 @@ const TaskList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/api/tasks/${id}`);
+      await axios.delete(
+        `https://task-management-app-server-puce.vercel.app/api/tasks/${id}`
+      );
       setTasks(tasks.filter((task) => task._id !== id));
     } catch (error) {
       console.error("Error deleting task: ", error);

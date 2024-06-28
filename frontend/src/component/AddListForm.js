@@ -11,7 +11,10 @@ const AddListForm = ({ onAddTask, onCancel }) => {
     const newTask = { title, description, dueDate };
 
     try {
-      const response = await axios.post("/api/tasks", newTask);
+      const response = await axios.post(
+        "https://task-management-app-server-puce.vercel.app/api/tasks",
+        newTask
+      );
       onAddTask(response.data); // Update frontend task list
       setTitle("");
       setDescription("");
