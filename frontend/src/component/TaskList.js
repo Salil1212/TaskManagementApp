@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Task from "./Task";
-import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate
+import { Link } from "react-router-dom"; // Import Link and useNavigate
 import "../TaskList.css"; // Import custom CSS file
 
 const TaskList = () => {
@@ -13,7 +13,9 @@ const TaskList = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get("/api/tasks");
+      const response = await axios.get(
+        "https://task-management-app-server-puce.vercel.app/api/tasks"
+      );
       setTasks(response.data);
     } catch (error) {
       console.error("Error fetching tasks: ", error);

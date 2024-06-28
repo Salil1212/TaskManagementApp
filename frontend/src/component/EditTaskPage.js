@@ -13,6 +13,7 @@ const EditTaskPage = () => {
 
   useEffect(() => {
     fetchTask();
+    // eslint-disable-next-line
   }, []);
 
   const fetchTask = async () => {
